@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment11_JS</title>
+</head>
+<body>
+    <h1>Bonus Question!!</h1>
+    <h2>BMI Calculator</h2>
+</body>
+<script>
+    let weight= Number(prompt("Enter your Weight in Kg"));
+    let height= Number(prompt("Enter your height in meter"));
+    let BMI;
+    BMI=weight/(height*height);
+   if(BMI<'18.5'){
+    alert("Underweight");
+   }
+   else if((BMI>='18.5') && (BMI<='24.9')){
+    alert("Normal weight");
+   }
+   else if((BMI>='25') && (BMI<='29.9')){
+    alert("Overweight");
+   }
+   else if(BMI>='30'){
+    alert("Obese weight");
+   }
+</script>
+</html>

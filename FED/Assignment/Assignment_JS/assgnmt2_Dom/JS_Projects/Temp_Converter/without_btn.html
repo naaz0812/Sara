@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('b-g-1103970.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* linear-gradient(#50E3C2); */
+  .container{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    padding: 27px;
+   padding-top: 20px;
+   padding-left: 65px;
+  
+   background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+  /* -webkit-backdrop-filter: blur(10px);  */
+  box-shadow: 0 4px 10px rgba(0,0,0,1);
+
+    
+  }
+  input{
+    width: 250px;
+    height: 37px;
+    margin: 12px;
+    gap: 16px;
+    box-shadow:  0 4px 10px rgba(0,0,0,1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+   background-color: rgba(255, 255, 255, 0.25);
+   font-size: larger;
+  }
+
+  
+
+  input:focus{
+     background-color: #2faca167;
+  }
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Temperature Converter</h2>
+    <input id="c" type="text" placeholder="Celsius" oninput="fa()">
+    <input id="f" type="text" placeholder="Fahrenheit" oninput="sel()">
+    </div>
+
+    <script>
+       function fa(){
+            let c = document.getElementById("c").value;
+            let f = document.getElementById("f").value;
+             f = (c * 9 / 5) + 32;
+            document.getElementById("f").value = f;
+        }
+
+        function sel(){
+            let f = document.getElementById("f").value;
+            let c = document.getElementById("c").value;
+             c = (f - 32) * 5 / 9;
+            document.getElementById("c").value = c;
+        }
+
+        
+        
+     </script>
+</body>
+</html>

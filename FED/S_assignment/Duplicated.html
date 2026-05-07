@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#50E3C2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background: white;
+    padding: 40px 35px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  /* Inputs full width with spacing */
+  input[type="text"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus {
+    border-color: #50E3C2;
+    box-shadow: 0 0 8px #50E3C2;
+  }
+
+  /* Buttons container: flex row with gap */
+  .buttons {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  button {
+    flex: 1;
+    padding: 14px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(45deg, #50E3C2, #4A90E2);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(80, 227, 194, 0.6);
+    transition: background 0.3s ease, transform 0.15s ease;
+  }
+
+  button:hover {
+    background: linear-gradient(45deg, #4A90E2, #50E3C2);
+    transform: translateY(-3px);
+  }
+
+  button:active {
+    transform: translateY(0);
+  }
+
+  /* Responsive - stack buttons vertically on small screens */
+  @media (max-width: 400px) {
+    .buttons {
+      flex-direction: column;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+    <input id="c" type="text" placeholder="Celsius">
+    <input id="f" type="text" placeholder="Fahrenheit">
+<br>
+<div class="buttion">
+    <button onclick="fa()">Fahrenheit</button>
+    <button onclick="sel()">Celsius</button>
+
+    </div>
+    </div>
+
+    <script>
+       function fa(){
+            let c = document.getElementById("c").value;
+            let f = document.getElementById("f").value;
+             f = (c * 9 / 5) + 32;
+            document.getElementById("f").value = f;
+        }
+
+        function sel(){
+            let f = document.getElementById("f").value;
+            let c = document.getElementById("c").value;
+             c = (f - 32) * 5 / 9;
+            document.getElementById("c").value = c;
+        }
+
+        
+        
+     </script>
+</body>
+</html>

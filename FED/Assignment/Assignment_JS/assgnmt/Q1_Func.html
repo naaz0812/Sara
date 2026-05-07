@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+
+    <script>
+        function Calculator(){
+            let numb1 = Number(prompt("Enter first number"));
+    let numb2 = Number(prompt("Enter second number"));
+    let operator =prompt("Enter the operator(+,-,*,/,)");
+
+    let result;
+    
+  if(operator== '+'){
+    result= numb1+numb2;                                 
+    alert("Sum of the Numbers are: "+result);
+  }
+  else if(operator== '-') {
+   result= numb1-numb2;
+    alert("Difference of the Numbers are: "+result);
+  }
+   else if(operator== '*'){
+    result= numb1*numb2;
+   
+   alert("Multiplication of the numbers are: "+result);
+   }
+   else if(operator== '/'){
+    result= numb1/numb2;
+   
+   alert("Division of the numbers are: "+result);
+   }
+   else{
+    alert("Wrong input");
+
+   }
+        }
+
+        function oddEven(){
+             let number =Number(prompt("Enter a number"));
+    number%2=="0"?alert("Entered number is an even number"):alert("Entered number is an odd number");
+        }   
+        
+        function grade(){
+            let marks = Number(prompt("Enter Marks of the student (0-100)"));
+     if((marks>=90) && (marks<=100)){
+        alert("Grade-'A+'");
+     }
+     else if((marks>=80) && (marks<=89)){
+        alert("Grade-'A'");
+     }
+     else if((marks>=70) && (marks<=79)){
+        alert("Grade-'B'");
+     }
+     else if((marks>=60) && (marks<=69)){
+        alert("Grade-'C'");
+     }
+     else if((marks>=50) && (marks<=59)){
+        alert("Grade-'D'");
+     }
+        }
+
+        function largest(){
+             let numb1= Number(prompt("Enter the first number-"));
+    let numb2= Number(prompt("Enter the second number-"));
+    let numb3= Number(prompt("Enter the third number-"));
+
+    if((numb1>numb2) && numb1>numb3){
+        alert("The largest number is: "+ numb1 );
+    }
+    else if(numb2>numb3){
+        alert("The largest number is: "+ numb2);
+    }
+    else if(numb3>numb2){
+        alert("The largest number is: "+ numb3);
+    }
+    else{
+        alert("Wrong Input!!");
+    }
+        }
+
+        // function  (){
+
+
+        // }
+        
+        
+        
+        function  si(){
+            let principal= Number(prompt("Enter Principal- "));
+    let rate= Number(prompt("Enter Rate (in %)- "));
+    let time= Number(prompt("Enter Time in years- "));
+
+    let simpleIntrest= (principal*rate*time)/100;
+
+    alert("Simple Intrest= "+simpleIntrest);
+    
+        }
+
+        function fahrenheit(){
+            let celsius= Number(prompt("Enter tempreture in celsius"));
+    let fahrenheit;
+    fahrenheit=(celsius*9/5)+32;
+    alert("Tempreture in fahrenheit is = "+ fahrenheit);
+
+        }
+        function voting(){
+            let age= Number(prompt("Enter your age--"));
+    if(age>='18'){
+        alert("Eligible to vote!");
+    }
+    else if(age<18){
+        alert(age-'18' + " Years left to be eligible");
+    }
+    else{
+        alert("Wrong Input");
+    }   
+        }
+        function bmi(){
+            let weight= Number(prompt("Enter your Weight in Kg"));
+    let height= Number(prompt("Enter your height in meter"));
+    let BMI;
+    BMI=weight/(height*height);
+   if(BMI<'18.5'){
+    alert("Underweight");
+   }
+   else if((BMI>='18.5') && (BMI<='24.9')){
+    alert("Normal weight");
+   }
+   else if((BMI>='25') && (BMI<='29.9')){
+    alert("Overweight");
+   }
+   else if(BMI>='30'){
+    alert("Obese weight");
+   }
+        } 
+        </script>
+
+
+<button onclick="Calculator">Open Calculator</button>
+<button onclick="oddEven">Check Odd-Even</button>
+
+<button onclick="grade">Check Grade</button>
+
+<button onclick="largest">Check Largest</button>
+
+<button onclick="si">Check Simple Intrest</button>
+
+<button onclick="fahrenheit">Check Fahrenheit</button>
+
+<button onclick="voting">Check Voting Eligiblity</button>
+
+<button onclick="bmi">Open BMI Calculator </button>
+
+
+
+
+</body>
+</html>

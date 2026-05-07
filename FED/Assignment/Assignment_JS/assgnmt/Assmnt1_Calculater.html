@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assgnmt.JS_1</title>
+</head>
+<body>
+    <h1>Calculator!</h1>
+    
+</body>
+<script>
+    
+    let numb1 = Number(prompt("Enter first number"));
+    let numb2 = Number(prompt("Enter second number"));
+    let operator =prompt("Enter the operator(+,-,*,/,)");
+
+    let result;
+    
+  if(operator== '+'){
+    result= numb1+numb2;                                 
+    alert("Sum of the Numbers are: "+result);
+  }
+  else if(operator== '-') {
+   result= numb1-numb2;
+    alert("Difference of the Numbers are: "+result);
+  }
+   else if(operator== '*'){
+    result= numb1*numb2;
+   
+   alert("Multiplication of the numbers are: "+result);
+   }
+   else if(operator== '/'){
+    result= numb1/numb2;
+   
+   alert("Division of the numbers are: "+result);
+   }
+   else{
+    alert("Wrong input");
+
+   }
+  
+</script>
+</html>

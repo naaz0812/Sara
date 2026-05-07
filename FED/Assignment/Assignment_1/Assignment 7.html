@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container" style="width: 100%;">
+        <div id="header" style="background-color:rgb(18, 81, 163);float:left;width:100%;margin-bottom: 5px;">
+            <h1 style="text-align: center; color: white;">Float Based Web Layout</h1>
+            <div id="nav"
+                style="background-color:  rgb(68, 106, 156);float: left;margin-left: 20px;padding: 5px;width: 95%;">
+                <div
+                    style="background-color: rgb(145, 165, 190);float: left;margin-right:10px;width: 25%;text-align: center;">
+                    Home</div>
+                <div
+                    style="background-color:  rgb(145, 165, 190);float: left;margin-right:10px;width: 25%;text-align: center;">
+                    About</div>
+                <div
+                    style="background-color:  rgb(145, 165, 190);float: left;margin-right:10px;width: 25%;text-align: center;">
+                    Services</div>
+                <div
+                    style="background-color:  rgb(145, 165, 190);float: left;margin-right:10px;width: 20%;text-align: center;">
+                    Contact</div>
+            </div>
+        </div>
+        <div id="main">    
+                <ul style="list-style: none; width: 200px;background-color: aqua;padding: 10px;float:left;height:330px;margin-bottom: 10px;">
+                    <h3>Sidebar</h3>
+                    <li style="border-bottom: 1px solid rgb(199, 199, 199);padding: 10px;">Menu Item 1</li>
+                    <li style="border-bottom: 1px solid rgb(199, 199, 199);padding: 10px;">Menu Item 2</li>
+                    <li style="border-bottom: 1px solid rgb(199, 199, 199);padding: 10px;">Menu Item 3</li>
+                    <li style="border-bottom: 1px solid rgb(199, 199, 199);padding: 10px;">Menu Item 4</li>
+                    <li style="border-bottom: 1px solid rgb(199, 199, 199);padding: 10px;">Menu Item 5</li>
+                </ul>
+
+                <div id="mainbox" style="background-color: antiquewhite;float: left;width: 83%;margin-top: 15px;height: 350px;margin-bottom: 10px;">
+                    <h2 style="margin-left: 10px;">Main Content Area</h2>
+                    <p style="margin-left: 10px;">This layout is created using CSS float properties.The sidebar is floated left,and the main content is</p>
+                    <p style="margin-left: 10px;">floated right</p>
+                    <div id="box1" style="background-color: palevioletred;width: 40%;margin-left: 10px;float: left;">
+                        <h3 style="margin-left: 10px;">Float Column 1</h3>
+                        <p style="margin-top: 10px;margin-left: 10px;">This column is floated laft.Float was</p> 
+                        <p style="margin-left: 10px;">commonly used for layouts before Flexbox</p>
+                        <p style="margin-left: 10px;">and CSS Grid</p>
+                    </div>    
+                        <div id="box2" style="background-color: palevioletred;width: 40%;margin-left: 30px;float: left;">
+                            <h3 style="margin-left: 10px;">Float Column 2</h3>
+                            <p style="margin-left: 10px;">This column is also floated left.Using float</p>
+                            <p style="margin-left: 10px;">for layout requires careful clearing of floats.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="box3" style="background-color: rgba(252, 249, 91, 0.562); width: 100%;height: 180px;float: left;margin-bottom: 30px;">
+                        <h3 style="margin-left: 10px;">About Float Layouts</h3>
+                        <p style="margin-left: 10px;">CSS float is a property that positions an element to the left or right of its container, allowing text and inline elements to wrap around</p>
+                        <p style="margin-left: 10px;">it.</p>
+                        <p style="margin-left: 10px;">While float is still useful for wrapping text around images,it's no longer the preferred method for creating complex page layouts.</p>
+                    </div>
+                    <div id="box4" style="background-color: blue;width: 100%;float: left;">
+                        <p style="text-align: center;color: white;">©2023 Float Layout Example.All rights reserved.</p>
+                    </div>
+                
+       
+        </div>
+    </div>
+</body>
+
+</html>

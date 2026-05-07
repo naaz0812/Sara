@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_4</title>
+</head>
+    
+<body>
+    <h1>Employment Application Form</h1>
+    <div>Please complete all the sections of this form. Fields marked with * are required.</div>
+    <br>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <div></div>
+        <div>
+            <label for="title">Title</label>
+            <select id="title">
+                <option value=" " disabled selected>Please Select</option>
+                <option value=" Mr.">Mr.</option>
+                <option value=" Mrs.">Mrs.</option>
+                <option value=" Ms.">Ms.</option>
+                <option value=" Dr.">Dr.</option>
+            </select>
+        </div>
+        <div>
+            <label for="first name">First Name*:</label>
+            <input id="first name" type="text">
+        </div>
+        <div>
+            <label for="last name">Last Name*:</label>
+            <input id="last name" type="text">
+        </div>
+        <div>
+            <label for="email">Email Address*:</label>
+            <input id="email" type="email">
+        </div>
+        <div>
+            <label for="phone number">Phone Number*:</label>
+            <input id="phone number" type="phone number" placeholder="123-456-7890">
+        </div>
+        <div>
+            <label for="dob">Date Of Birth*:</label>
+            <input id="dob" type="date" placeholder="m/dd/yyyy">
+        </div>
+        <div>
+            <label for="add">Address*:</label>
+            <textarea name="adress" id="add"></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div>Employment Details</div>
+        <div>
+            <label for="desired">Desired Position*:</label>
+            <select id="desired">
+                <option value="" disabled selected>Please select</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="Business Analyst">Business Analyst</option>
+            </select>
+        </div>
+        <div>
+            <label for="salary">Expected Salary (S):</label>
+            <input id="salary" type="text">
+        </div>
+        <div>
+            <label for="date">Available Start Date*:</label>
+            <input id="date" type="date" placeholder="m/dd/yyyy">
+        </div>
+        <div>
+            <p>Employment Type</p>
+            <input id="full-time" type="radio" name="full-time" value="Full-time">
+            <label for="full-time">Full-time</label>
+       
+            <input id="part-time" type="radio" name="part-time" value="Part-time">
+            <label for="Part-time">Part-time</label>
+        
+            <input id="contract" type="radio" name="contract" value="contract">
+            <label for="contract">Contract</label>
+        </div>
+
+        <p>Remote Work Option:</p>
+
+
+    </fieldset>
+
+
+</body>
+
+</html>

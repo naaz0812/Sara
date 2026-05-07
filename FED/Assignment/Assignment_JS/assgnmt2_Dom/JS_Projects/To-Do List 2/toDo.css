@@ -1,0 +1,36 @@
+body{
+    background-color: whitesmoke;
+   font-family: sans-serif;
+}
+    
+    h1{
+   text-align: center;  
+}
+
+#material{
+    margin: 50px 5px 0px 90px;
+}
+#input{
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 380px;
+border: 1px solid grey;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+#btn{
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 130px;
+border: 1px solid grey;
+border-radius: 11px;
+box-shadow: 0 3px 8px rgba(0,0,0.2);
+background-color:rgb(56, 116, 226) ;
+color: whitesmoke;
+}
+
+
+#li{
+
+
+}
